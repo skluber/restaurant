@@ -1,0 +1,42 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--bg-primary);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-menus,
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0.5rem;
+  font-weight: 500;
+  font-size: 1.3em;
+  transition: color 0.3s ease;
+}
+
+nav button:hover {
+  color: var(--accent-terracotta);
+}
+
+@media (max-width: 700px) {
+  .logo-text {
+    display: none;
+  }
+}

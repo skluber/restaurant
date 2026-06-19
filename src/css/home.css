@@ -1,0 +1,90 @@
+.restaurant-photo {
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/restaurant-entrance-v2.jpg");
+}
+
+.reservation-container {
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 150px;
+    justify-items: center;
+    gap: 40px;
+    height: 100%;
+}
+
+.reservation-cta h1 {
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.reservation-cta p {
+    text-align: center;
+    font-size: 2em;
+    padding: 0px 60px;
+}
+
+@media (max-width: 900px) {
+    .reservation-cta h1 {
+        font-size: 2.5em;
+    }
+    .reservation-cta p {
+        font-size: 1.25em;
+        padding: 0 15px; /* More breathing room on mobile */
+    }
+}
+
+.reservation-buttons {
+    display: flex;
+    gap: 20px;           
+    margin-top: 2rem;    
+}
+
+.reservation-buttons button {
+    padding: 12px 32px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;  
+    border-radius: 4px;   
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    max-height: 100px;
+}
+
+.reservation-buttons button:first-child {
+    background-color: var(--accent-terracotta);
+    color: var(--bg-primary);
+    border: 2px solid var(--accent-terracotta);
+}
+
+.reservation-buttons button:first-child:hover {
+    background-color: transparent;
+    color: var(--accent-terracotta); 
+}
+
+.reservation-buttons button:last-child {
+    background-color: transparent;
+    color: var(--text-dark);
+    border: 2px solid var(--text-dark);
+}
+
+.reservation-buttons button:last-child:hover {
+    background-color: var(--text-dark);
+    color: var(--bg-primary); 
+}
+
+@media (max-width: 700px) {
+    .reservation-buttons {
+        flex-direction: column; 
+        gap: 12px;
+        width: 100%;
+    }
+    
+    .reservation-buttons button {
+        width: 100%;
+    }
+}
