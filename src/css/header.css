@@ -6,7 +6,6 @@ header {
   background-color: var(--bg-primary);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 1rem 2rem;
-  height: 72px;
   width: 100%;
 }
 
