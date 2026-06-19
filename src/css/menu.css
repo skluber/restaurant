@@ -1,6 +1,6 @@
 #carta-wrapper {
     display: grid;
-    grid-template-rows: 400px 200px 1fr;
+    grid-template-rows: 0.3fr 0.1fr auto;
     gap: 40px;
     padding-bottom: 20px;
 }
