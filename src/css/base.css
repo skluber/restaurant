@@ -4,6 +4,17 @@
   padding: 0;
 }
 
+nav button {
+    /* Elimina el renderizado por defecto de Apple */
+    -webkit-appearance: none;
+    appearance: none;
+    
+    /* Asegura que hereden los colores correctos */
+    background: transparent; /* O el color que quieras darle */
+    border: none;
+    font-family: inherit;
+}
+
 :root {
     --bg-primary: #FDFBF7;
     --text-dark: #1A2421;
