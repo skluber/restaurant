@@ -15,6 +15,8 @@ function renderPage(pageFunction) {
         mainContent.innerHTML = "";
         mainContent.appendChild(pageFunction());
 
+        window.scrollTo(0, 0);
+        
         requestAnimationFrame(() => {
             mainContent.classList.add("fade-in");
         })

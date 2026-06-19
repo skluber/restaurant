@@ -33,6 +33,16 @@ nav button {
   transition: color 0.3s ease;
 }
 
+.nav-menus a, 
+#btn-home, 
+#btn-menu, 
+#btn-reserve {
+    color: var(--brand-sage) !important;
+    text-decoration: none;     
+    -webkit-tap-highlight-color: transparent; 
+    transition: color 0.3s ease;
+}
+
 nav button:hover {
   color: var(--accent-terracotta);
 }
